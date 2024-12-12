@@ -25,12 +25,7 @@ public:
     }
 
     bool isFull() {
-        if (head == 0 && tail == ssize - 1)
-            return true;
-        else if (head == tail + 1)
-            return true;
-        else
-            return false;
+        return (head == 0 && tail == ssize - 1) || (head == tail + 1);
     }
 
     void enQueue(int num) {
@@ -38,12 +33,12 @@ public:
             throw Exception(102, "Queue is full");
 
         if (isEmpty()) {
-            head = tail = 0;
+            head = tail = 0; //case_1: Queue is empty, head and tail at -1
             Q[tail] = num;
-        } else if (tail == ssize - 1) {
+        } else if (tail == ssize - 1) { //case_2: tail at last position of queue, reset it.
             tail = 0;
             Q[tail] = num;
-        } else {
+        } else { //case_3: normal case tail at middle
             Q[++tail] = num;
         }
     }
@@ -51,14 +46,13 @@ public:
     int deQueue() {
         if (isEmpty())
             throw Exception(101, "Queue is empty");
-        else {
-            if (head == tail) {
-                head = tail = -1;
-            } else if (head == ssize - 1) {
-                head = 0;
-            } else {
-                ++head;
-            }
+
+        if (head == tail) { //case_3: head and tail at the same position.
+            head = tail = -1;
+        } else if (head == ssize - 1) { //case_2: head at the last index of the queue.
+            head = 0;
+        } else { //case_1: default case, head at first or middle.
+            ++head;
         }
     }
 
