@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1734006713 source:d:\iti\10.data structure\day2\queuedlinkedlist\main.cpp
+	<iostream>
+	"Queue.h"
+	"Exception.h"
+
+1734006699 d:\iti\10.data structure\day2\queuedlinkedlist\include\queue.h
+	"Node.h"
+	"Exception.h"
+
+1734005015 d:\iti\10.data structure\day2\queuedlinkedlist\include\node.h
+
+1734004910 d:\iti\10.data structure\day2\queuedlinkedlist\include\exception.h
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1734008299 source:d:\iti\10.data structure\day2\stackusingarray\main.cpp
+	<iostream>
+	"Stack.h"
+	"Exception.h"
+
+1734008284 d:\iti\10.data structure\day2\stackusingarray\include\stack.h
+	<iostream>
+	"Exception.h"
+
+1734007043 d:\iti\10.data structure\day2\stackusingarray\include\exception.h
+

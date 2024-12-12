@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1734011252 source:d:\iti\10.data structure\day2\circularqueue\main.cpp
+	<iostream>
+	"Queue.h"
+	"Exception.h"
+
+1734011281 d:\iti\10.data structure\day2\circularqueue\include\queue.h
+	"Exception.h"
+	<iostream>
+
+1734008481 d:\iti\10.data structure\day2\circularqueue\include\exception.h
+

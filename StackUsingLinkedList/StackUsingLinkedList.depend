@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1734004719 source:d:\iti\10.data structure\day2\stackusinglinkedlist\main.cpp
+	<iostream>
+	"Stack.h"
+	"Exception.h"
+
+1734005749 d:\iti\10.data structure\day2\stackusinglinkedlist\include\stack.h
+	"Node.h"
+	"Exception.h"
+	<iostream>
+
+1734003975 d:\iti\10.data structure\day2\stackusinglinkedlist\include\node.h
+
+1734003551 d:\iti\10.data structure\day2\stackusinglinkedlist\include\exception.h
+
