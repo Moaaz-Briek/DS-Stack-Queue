@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1734179350 source:d:\iti\10.data structure\day2\bubblesortwithlinkedlist\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1734179836 d:\iti\10.data structure\day2\bubblesortwithlinkedlist\include\linkedlist.h
+	<iostream>
+	"Node.h"
+	"Exception.h"
+
+1734173328 d:\iti\10.data structure\day2\bubblesortwithlinkedlist\include\node.h
+
+1734177504 d:\iti\10.data structure\day2\bubblesortwithlinkedlist\include\exception.h
+
+1734179350 source:d:\iti\10.data structure\bubblesortwithlinkedlist\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1734182268 d:\iti\10.data structure\bubblesortwithlinkedlist\include\linkedlist.h
+	<iostream>
+	"Node.h"
+	"Exception.h"
+
+1734173328 d:\iti\10.data structure\bubblesortwithlinkedlist\include\node.h
+
+1734177504 d:\iti\10.data structure\bubblesortwithlinkedlist\include\exception.h
+
