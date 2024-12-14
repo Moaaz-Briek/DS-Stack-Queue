@@ -23,7 +23,7 @@ void test_case_2() {
     list.add(10);
     list.add(13);
     cout << list;
-    list.bubbleSortBySwapData();
+    list.bubbleSortBySwapNode();
     cout << list;}
 
 int main()
