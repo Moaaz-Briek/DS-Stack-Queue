@@ -73,6 +73,24 @@ class LinkedList
             }
         }
 
+        void insertAfterWithoutCreateNewNode(Node* newNode, Node* flagNode) {
+            if (flagNode == head && flagNode == tail) {
+                newNode->prev = flagNode;
+                flagNode->next = newNode;
+                tail = newNode;
+            } else if (flagNode == tail) {
+                newNode->prev = flagNode;
+                flagNode->next = newNode;
+                tail = newNode;
+            } else {
+                Node* A = flagNode->next;
+                A->prev = newNode;
+                newNode->next = A;
+                flagNode->next = newNode;
+                newNode->prev = flagNode;
+            }
+        }
+
         int getCount() {
             Node* current = head;
             int Count = 0;
@@ -99,27 +117,22 @@ class LinkedList
             throw Exception(404, "Not Found");
         }
 
-        void Remove(int data) {
-            Node* node = getNode(data);
-
-            if (node != NULL) {
-                if (node == head) {
-                    if (node == tail) {
-                        head = tail = NULL;
-                    }
-                    head = node->next;
-                    head->prev = NULL;
-                } else if (node == tail) {
-                    tail = node->prev;
-                    tail->next = NULL;
-                } else {
-                    Node* prev = node->prev;
-                    Node* next = node->next;
-
-                    prev->next = next;
-                    next->prev = prev;
+        void RemoveConnection(Node* node) {
+            if (node == head) {
+                if (node == tail) {
+                    head = tail = NULL;
                 }
-                delete(node);
+                head = node->next;
+                head->prev = NULL;
+            } else if (node == tail) {
+                tail = node->prev;
+                tail->next = NULL;
+            } else {
+                Node* prev = node->prev;
+                Node* next = node->next;
+
+                prev->next = next;
+                next->prev = prev;
             }
         }
 
@@ -191,8 +204,8 @@ class LinkedList
                     Node* nextNode = currentNode->next;
 
                     if (currentNode->data > nextNode->data) {
-
-
+                        RemoveConnection(currentNode);
+                        insertAfterWithoutCreateNewNode(currentNode, nextNode);
                         sorted = true;
                     }
                     currentNode = nextNode;
