@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1734175575 source:d:\iti\10.data structure\day2\linearsearch\main.cpp
+	<iostream>
+	"Exception.h"
+	"LinkedList.h"
+
+1734174156 d:\iti\10.data structure\day2\linearsearch\include\exception.h
+
+1734175765 d:\iti\10.data structure\day2\linearsearch\include\linkedlist.h
+	<iostream>
+	"Node.h"
+	"Exception.h"
+
+1734174380 d:\iti\10.data structure\day2\linearsearch\include\node.h
+
