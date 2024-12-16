@@ -160,17 +160,6 @@ class Tree
             return NULL;
         }
 
-        void display(Node* node) {
-            if (node == NULL)
-                return;
-
-            display(node->left);
-
-            cout << node->data << "\t";
-
-            display(node->right);
-        }
-
         void sortTreeAsc(Node* node, Queue& queu) {
             if (node == NULL)
                 return;
