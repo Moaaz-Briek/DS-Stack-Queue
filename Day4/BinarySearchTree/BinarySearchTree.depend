@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1734355715 source:d:\iti\10.data structure\day4\binarysearchtree\main.cpp
+	<iostream>
+	"Tree.h"
+	"Exception.h"
+
+1734355735 d:\iti\10.data structure\day4\binarysearchtree\include\tree.h
+	"Node.h"
+	"Queue.h"
+
+1734338205 d:\iti\10.data structure\day4\binarysearchtree\include\node.h
+
+1734355473 d:\iti\10.data structure\day4\binarysearchtree\include\queue.h
+	"QueueNode.h"
+	"Exception.h"
+	<iostream>
+
+1734352483 d:\iti\10.data structure\day4\binarysearchtree\include\queuenode.h
+
+1734355558 d:\iti\10.data structure\day4\binarysearchtree\include\exception.h
+
